@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../media/glr_background.jpg");
+    background-repeat: no-repeat;
+    background-size: 1920px;
+}
+
+
+h1, h2, #logout {
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+.table_id {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 65%;
+    text-align: center;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+.table_id td, .table_id th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table_id tr:nth-child(even){background-color: #f2f2f2;}
+
+.table_id tr:hover {background-color: #ddd;}
+
+.table_id th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+#opmerking_tekst {
+    width: 300px;
+}
+
+#logout {
+    text-decoration: underline;
+    color: black;
+}
+
+#logout:hover {
+    text-decoration: none;
+}
+
+header {
+    height: 180px;
+    width: 100%;
+
+    text-align: center;
+    margin: 0 auto;
+
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "links midden rechts";
+
+    background-color: white;
+    opacity: 0.85;
+}
+
+.links { grid-area: links; }
+.midden { grid-area: midden; }
+.rechts { grid-area: rechts; }
+
+
+main {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 25px;
+    padding: 55px;
+    margin-top: 145px;
+    /*border: 1px solid black;*/
+    background-color: white;
+    opacity: 0.85;
+}
+
+#login_width {
+    width: 450px ;
+}
+
+.knop {
+    font-size: 20px;
+}
+
+.header_logo {
+    height: 165px;
+    width: auto;
+    position: absolute;
+    left: 0;
+    pointer-events: none
+}
+
+.header_tekst {
+    margin-top: 55px;
+    text-decoration: underline;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
